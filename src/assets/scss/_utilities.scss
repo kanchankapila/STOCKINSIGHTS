@@ -1,0 +1,13 @@
+/* Utilities */
+@use 'variables' as *;
+@use 'functions' as *;
+
+.grid-margin {
+  margin-bottom: $card-spacing-y;
+}
+  
+@each $color, $value in $theme-gradient-colors {
+	.bg-gradient-#{$color} {
+		background: theme-gradient-color($color) !important;
+	}
+}

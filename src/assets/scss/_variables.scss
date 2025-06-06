@@ -1,0 +1,426 @@
+////////// COLOR SYSTEM //////////
+
+$blue: #5E50F9 !default;
+$indigo: #6610f2 !default;
+$purple: #6a008a !default;
+$pink: #E91E63 !default;
+$red: #f96868 !default;
+$orange: #f2a654 !default;
+$yellow: #f6e84e !default;
+$dark-yellow: rgb(243, 243, 130) !default;
+$green: #46c35f !default;
+$teal: #58d8a3 !default;
+$cyan: #57c7d4 !default;
+$black: #000 !default;
+$white: #ffffff !default;
+$white-smoke: #f2f7f8 !default;
+$violet: #41478a !default;
+$darkslategray: #2e383e !default;
+$dodger-blue: #3498db !default;
+
+$theme-colors: (
+  "primary": #b66dff,
+  "secondary": #c3bdbd,
+  "success": #1bcfb4,
+  "info": #198ae3,
+  "warning": #fed713,
+  "danger": #fe7c96,
+  "light": #f8f9fa,
+  "dark": #3e4b5b
+) !default;
+
+$primary: #b66dff !default;
+$secondary: #c3bdbd !default;
+$success: #1bcfb4 !default;
+$info: #198ae3 !default;
+$warning: #fed713 !default;
+$danger: #fe7c96 !default;
+$light: #f8f9fa !default;
+$dark: #3e4b5b !default;
+$neutral: orange !default;
+
+$theme-colors-text: (
+  "primary": #b66dff,
+  "secondary": #c3bdbd,
+  "success": #1bcfb4,
+  "info": #198ae3,
+  "warning": #fed713,
+  "danger": #fe7c96,
+  "light": #f8f9fa,
+  "dark": #3e4b5b
+) !default;
+
+$theme-colors-bg-subtle: (
+  "primary": #cfe2ff,
+  "secondary": #e2e3e5,
+  "success": #d1e7dd,
+  "info": #cff4fc,
+  "warning": #fff3cd,
+  "danger": #f8d7da,
+  "light": #fcfcfd,
+  "dark": #ced4da
+) !default;
+
+$theme-gradient-colors: (
+  "primary": linear-gradient(to right, #da8cff, #9a55ff),
+  "secondary": linear-gradient(to right, #e7ebf0, #868e96),
+  "success": linear-gradient(to right, #84d9d2, #07cdae),
+  "info": linear-gradient(to right, #90caf9, #047edf 99%),
+  "warning": linear-gradient(to right, #f6e384, #ffd500),
+  "danger": linear-gradient(to right, #ffbf96, #fe7096),
+  "light": linear-gradient(to bottom, #f4f4f4, #e4e4e9),
+  "dark": linear-gradient(89deg, #5e7188, #3e4b5b),
+  "neutral": linear-gradient(to right, orange, #edfe70)
+);
+
+// ////////// COLOR SYSTEM //////////
+
+// ////////// COLOR VARIABLES //////////
+// $content-bg: white;
+// $footer-bg: $content-bg;
+// $footer-color: color(dark);
+// $border-color: #ebedf2;
+// $circle-border:white;
+// ////////// COLOR VARIABLES //////////
+
+// ////////// SOCIAL COLORS //////////
+
+
+
+// ////////// SOCIAL COLORS //////////
+
+// ////////// FONTS//
+$type-1: 'roboto',
+sans-serif !default;
+$type-2: $type-1 !default;
+$type1-light: 'ubuntu-light',
+sans-serif !default;
+$type1-regular: 'ubuntu-regular',
+sans-serif !default;
+$type1-medium: 'ubuntu-medium',
+sans-serif !default;
+$type1-bold: 'ubuntu-bold',
+sans-serif !default;
+
+$default-font-size: .875rem !default; // 14px as base font size
+$small-font-size: .45rem !default;
+// $text-muted: #9c9fa6;
+// $body-color: #343a40;
+
+// ////////// FONT VARIABLES //////////
+
+// ///////// CARD ////////
+
+
+ $card-description-color: #76838f !default;
+// $card-title-color: $body-color;
+$card-bg-varient: #fff !default;
+// ///////// CARD ////////
+
+// //////// TABLES ////////
+// $table-accent-bg: transparent;
+// $table-hover-bg: $content-bg;
+// $table-cell-padding: .9375rem;
+// $table-cell-padding1: .4375rem;
+// $table-border-color: $border-color;
+// $table-inverse-bg: #2a2b32;
+// $table-inverse-color: color(white);
+// //////// TABLES ////////
+
+// ////////// MODALS VARIABLES //////////
+// $modal-content-bg: $content-bg;
+// ////////// MODALS VARIABLES //////////
+
+// ///////// NAVBAR ////////
+// $navbar-bg: #fff;
+ $navbar-height: 180px !default;
+// $navbar-menu-color: #9c9fa6;
+// $navbar-font-size: .875rem;
+// $navbar-icon-font-size: 1.25rem;
+// $mail-head-bg:#303a40;
+// $u-name-color:black;
+// $file-name:black;
+// ///////// NAVBAR ////////
+// $sidebar-bg: white;
+// $sidebar-menu-color: #3e4b5b;
+// $sidebar-submenu-color: #888;
+// $sidebar-menu-active-bg: white;
+// $sidebar-menu-active-color: theme-color(primary);
+// $sidebar-menu-hover-bg: darken($sidebar-bg, 1%);
+// $sidebar-menu-hover-color: darken($sidebar-menu-color, 10%);
+// $sidebar-submenu-hover-color: darken($sidebar-submenu-color, 20%);
+// $sidebar-menu-icon-color: #bba8bff5;
+// $sidebar-menu-arrow-color: #9e9da0;
+// $sidebar-menu-border-color: #f2edf3;
+
+$sidebar-menu-font-size: $default-font-size !default;
+$sidebar-menu-padding-y: .5rem !default;
+$sidebar-menu-padding-x: 2.25rem !default;
+
+// $sidebar-submenu-font-size: .8125rem;
+// $sidebar-submenu-item-padding: .75rem 2rem .75rem 2rem;
+
+// $sidebar-icon-font-size: 1.125rem;
+// $sidebar-arrow-font-size: .625rem;
+
+// $sidebar-profile-bg: primary;
+// $sidebar-profile-padding: .75rem 1.625rem .75rem 1.188rem;
+
+// $sidebar-icon-only-menu-padding: .5rem 1.625rem .5rem 1.188rem;
+// $sidebar-icon-only-submenu-padding: 0 0 0 1.5rem;
+
+// $icon-only-collapse-width: 190px;
+// $icon-only-menu-bg-light: $sidebar-bg;
+
+
+// ///////// BUTTONS ////////
+
+// $button-fixed-width: 150px;
+// $btn-padding-y: .875rem;
+// $btn-padding-x: 2.5rem;
+// $btn-line-height: 1;
+
+// $btn-padding-y-xs: .5rem;
+// $btn-padding-x-xs: .75rem;
+
+// $btn-padding-y-sm: .50rem;
+// $btn-padding-x-sm: .81rem;
+
+// $btn-padding-y-lg: 1rem;
+// $btn-padding-x-lg: 3rem;
+
+// $btn-font-size: .875rem;
+// $btn-font-size-xs: .625rem;
+// $btn-font-size-sm: .875rem;
+// $btn-font-size-lg: .875rem;
+
+// $btn-border-radius: .1875rem;
+// $btn-border-radius-xs: .1875rem;
+// $btn-border-radius-sm: .1875rem;
+// $btn-border-radius-lg: .1875rem;
+
+// ///////// BUTTONS ////////
+
+
+
+// ////////// TOOLTIP VARIABLES //////////
+
+// //default styles
+// $tooltip-font-size: .75rem;
+// $tooltip-padding-y: .4rem;
+// $tooltip-padding-x: .75rem;
+// $tooltip-border-radius: .375rem;
+
+// ////////// TOOLTIP VARIABLES //////////
+
+
+
+// /////////  FORMS /////////
+
+// $input-bg: color(white);
+// $input-border-radius: 2px;
+// $input-placeholder-color: #c9c8c8;
+// $input-font-size: .8125rem;
+
+// $input-padding-y: 0.94rem;
+// $input-padding-x: 1.375rem;
+// $input-line-height: 1;
+
+// $input-padding-y-xs: .5rem;
+// $input-padding-x-xs: .75rem;
+
+// $input-padding-y-sm: .50rem;
+// $input-padding-x-sm: .81rem;
+
+// $input-padding-y-lg: .94rem;
+// $input-padding-x-lg: 1.94rem;
+
+// $input-height:          2.875rem;
+// $input-height-sm:       2.575rem;
+// $input-height-lg:       3.175rem;
+
+// ///////// FORMS /////////
+
+// ////////  DROPDOWNS ///////
+// $dropdown-border-color: $border-color;
+// $dropdown-divider-bg: $border-color;
+// $dropdown-link-color: $body-color;
+// $dropdown-header-color: $body-color;
+// $dropdown-menu-box-shadow: 0px 1px 15px 1px rgba(230, 234, 236, 0.35);
+// $dropdown-hover-bg: #f8f9fa;
+// ////////  DROPDOWNS ///////
+
+
+////////// MEASUREMENT AND PROPERTY VARIABLES //////////
+$border-color:white !default;
+$boxed-container-width: 1200px !default;
+$border-property: 1px solid $border-color !default;
+$card-spacing-y: 1rem !default;
+$card-padding-y: 0.5rem !default;
+$card-padding-x: 0.5rem !default;
+$card-border-radius: .3125rem !default;
+$grid-gutter-width: 60px !default;
+$action-transition-duration: 0.25s !default;
+$action-transition-timing-function: ease !default;
+////////// OTHER VARIABLES //////////
+
+////////// BREAD CRUMBS VARIABLES //////////
+
+// default styles
+
+// custom styles
+
+////////// BREAD CRUMBS VARIABLES //////////
+
+
+// ////////// MODALS VARIABLES //////////
+// $modal-inner-padding: .9375rem;
+// $modal-dialog-margin: 10px;
+// $modal-dialog-margin-y-sm-up: 30px;
+// // $modal-title-line-height: $line-height-base;
+// $modal-content-box-shadow-xs: 0 3px 9px rgba(black, .5);
+// $modal-content-box-shadow-sm-up: 0 5px 15px rgba(black, .5);
+
+// $modal-backdrop-bg: black;
+// $modal-backdrop-opacity: .5;
+
+// $modal-header-border-color: $border-color;
+// $modal-content-border-color: $border-color;
+// $modal-footer-border-color: $border-color;
+
+// $modal-header-border-width: $border-width;
+// $modal-content-border-width: $border-width;
+// $modal-footer-border-width: $border-width;
+
+// $modal-header-padding-x: 26px;
+// $modal-header-padding-y: 25px;
+
+// $modal-body-padding-x: 26px;
+// $modal-body-padding-y: 35px;
+
+// $modal-footer-padding-x: 31px;
+// $modal-footer-padding-y: 15px;
+
+// $modal-lg: 90%;
+// $modal-md: 500px;
+// $modal-sm: 300px;
+// $modal-transition: transform .4s ease;
+
+////////// MODALS VARIABLES //////////
+
+// /////////  TABS VARIABLES //////////
+// $nav-tabs-border-color: #ebedf2;
+// $nav-tabs-link-bg: #f6f8fa;
+// $nav-tabs-link-color: #000000;
+// $nav-tabs-link-hover-border-color: $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-border-color;
+// $nav-tabs-link-active-color: $body-color;
+// $nav-tabs-link-active-bg: white;
+// $nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-link-active-bg;
+// $nav-pills-custom-bg: #fcfcfd;
+// ////////   TABS VARIABLES /////////
+// $accent-color: white;
+// $chat-container-height:100%s;
+// $text-gray:gray;
+// $bullet-line-list-shape-bg: color(white) !default;
+// $arrow-color: white;
+// $tab-head-bg: darken(#f2edf3, 2%);
+// $accordian-shadow-color:rgba(230, 234, 236, 0.35);
+// $landing-bg:#1a142dfa;
+// $private-btn-bg:#eae2ec;
+// $circle-img-border: white;
+// $bottom-submenu-bg: white;
+// $chat-bottom-btn: white;
+// $form-focus-bg:white;
+// $form-focus-bg: white;
+// $form-focus-color:black;
+// $landing-bg-color: white;
+// $mail-hover-color: rgba(240, 244, 249, 0.8);
+
+
+
+
+
+////////// SIDEBAR ////////
+$sidebar-width-lg: 260px !default;
+$sidebar-width-mini: 185px !default;
+$sidebar-width-icon: 70px !default;
+
+// $sidebar-light-bg: white;
+// $sidebar-light-menu-color: #3e4b5b;
+// $sidebar-light-submenu-color: #888;
+// $sidebar-light-menu-active-bg: white;
+// $sidebar-light-menu-active-color: $primary;
+// $sidebar-light-menu-hover-bg: darken($sidebar-light-bg, 1%);
+// $sidebar-light-menu-hover-color: darken($sidebar-light-menu-color, 10%);
+// $sidebar-light-submenu-hover-color: darken($sidebar-light-submenu-color, 20%);
+// $sidebar-light-menu-icon-color: #bba8bff5;
+// $sidebar-light-menu-arrow-color: #9e9da0;
+// $sidebar-light-menu-border-color: #f2edf3;
+
+$sidebar-menu-font-size: $default-font-size !default;
+// $sidebar-menu-padding-y: 1.125rem;
+// $sidebar-menu-padding-x: 2.25rem;
+
+// $sidebar-submenu-font-size: .8125rem;
+// $sidebar-submenu-item-padding: .75rem 2rem .75rem 2rem;
+
+// $sidebar-icon-font-size: 1.125rem;
+// $sidebar-arrow-font-size: .625rem;
+
+// $sidebar-profile-bg: transparent;
+// $sidebar-profile-padding: .75rem 1.625rem .75rem 1.188rem;
+
+// $rtl-sidebar-submenu-padding: 0 1.5rem 0 0;
+
+// $sidebar-icon-only-menu-padding: .5rem 1.625rem .5rem 1.188rem;
+// $sidebar-icon-only-submenu-padding: 0 0 0 1.5rem;
+
+// $icon-only-collapse-width: 190px;
+// $icon-only-menu-bg-light: $sidebar-light-menu-hover-bg;
+
+// ///////// SIDEBAR ////////
+
+// // $bullet-line-list-shape-bg: color(white) !default;
+// $buy-nowbanner-padding-top:80px;
+
+// Theme colors
+$theme-colors-text: (
+  "primary": #007bff,
+  "secondary": #6c757d,
+  "success": #28a745,
+  "info": #17a2b8,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+  "dark": #343a40
+);
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+// Container max widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) !default;
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3
+) !default;

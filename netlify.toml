@@ -1,0 +1,31 @@
+command = "npm run build"
+publish = "dist/"
+
+base="/"
+
+[[redirects]]
+from="/*"
+to="/index.html"
+status=200
+
+[[plugins]]
+package = "netlify-plugin-chromium"
+
+      
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[functions]
+  node_bundler = "esbuild"
+
+
+[functions."tlcookierefreshvercel"]
+schedule = "@daily"
+
+
+
+

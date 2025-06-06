@@ -1,0 +1,47 @@
+@forward "./functions";
+@forward "./mixins/cards";
+@forward "./mixins/text";
+@forward "./mixins/buttons";
+@forward "./variables";
+
+@use "sass:math";
+@use "sass:color";
+@use "./variables" as *;
+@use "./bootstrap" as bs;
+
+// Import components with proper variable configuration
+@use "./components/cards";
+
+// Import layouts and utilities
+@use "./utilities" as utils;
+@use "./layouts" as layouts;
+@use "./vertical-wrapper" as vertical;
+
+/*-------------------------------------------------------------------*/
+/* === Template mixins === */
+/* All mixins are now imported using @use above if needed */
+/* Or they are part of the Bootstrap setup from _bootstrap.scss */
+/*-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------*/
+/* === Components === */
+/* All components are now imported using @use above if needed */
+/* Or they are part of the Bootstrap setup from _bootstrap.scss */
+/*-------------------------------------------------------------------*/
+
+// Any other purely custom styles for 'style.scss' can go here.
+// Avoid re-importing or re-configuring Bootstrap or global libraries.
+
+// Commented out potentially problematic or redundant old imports:
+// @use "../../../node_modules/bootstrap/scss/functions" as bootstrap-functions;
+// @use "../../../node_modules/bootstrap/scss/variables" as bootstrap-variables;
+// @use "../../../node_modules/compass-mixins/lib/compass" as compass;
+// @use "../../../node_modules/compass-mixins/lib/animate" as animate;
+// @use "../../../node_modules/bootstrap/scss/bootstrap" as bootstrap;
+// @import './variables'; // Prefer @use
+// @import "../../../node_modules/compass-mixins/lib/animate";
+// @import "../../../node_modules/bootstrap/scss/bootstrap";
+// @import "./mixins/misc";
+// @import "./mixins/animation";
+// @import './navbar';
+// @import './sidebar';

@@ -1,0 +1,227 @@
+@use '../../../assets/scss/variables' as vars;
+@use '../../../assets/scss/bootstrap' as bs;
+
+/* Navbar */
+:host ::ng-deep .p-dropdown {
+  width: 14rem;
+}
+
+/* Navbar */
+.owl-clock {
+  display: inline-block;
+  font-size: 0.4em;
+}
+
+.abc {
+  width: 100%;
+  height: 70px;
+}
+
+.card {
+  position: relative;
+  background: vars.$white;
+  border: 0;
+  margin-top: 1rem;
+}
+
+.card .canvas-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: auto;
+}
+
+@media (max-width: 424px) {
+  .card {
+    position: relative;
+  }
+
+  .card .canvas-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: auto;
+  }
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 599px) {
+  .layout-container {
+    flex-direction: column;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+/* Button styles */
+.responsive-button {
+  flex: 1 1 auto;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Adjust button size and font size for larger screens */
+@media (min-width: 768px) {
+  .responsive-button {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+}
+
+/* Adjust button size and font size for smaller screens */
+@media (max-width: 767px) {
+  .responsive-button {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+}
+
+/* For Nifty Cards */
+.card-containertopcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-wrappertopcards {
+  flex: 1 1 30%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .card-wrappertopcards {
+    flex: 1 1 100%;
+    font-size: 0.8em;
+  }
+
+  .card-bodytopcards {
+    font-size: 0.8em;
+  }
+}
+
+:host {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 8px;
+}
+
+.brand-logo {
+  height: 32px;
+  width: auto;
+}
+
+.brand-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.theme-toggle {
+  margin-right: 8px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (max-width: 599px) {
+  .brand-text {
+    display: none;
+  }
+  
+  .brand-logo {
+    height: 24px;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 64px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    margin-right: 16px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+      padding: 8px;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+
+      &.active {
+        color: #1976d2;
+      }
+    }
+  }
+}
