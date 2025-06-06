@@ -18,8 +18,8 @@
     "stats": "webpack-bundle-analyzer /dist/stats.json"
   },
   "engines": {
-    "node": "20.15.0",
-    "npm": "10.8.1"
+    "node": "v22.16.0",
+    "npm": "11.4.1"
   },
   "resolutions": {
     "uglify-es": "npm:terser"
