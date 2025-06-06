@@ -20,92 +20,6 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
 import { ChartOptions } from '../core/models/chart.interface';
 
-@Component({
-  selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss'],
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterModule,
-    FormsModule,
-    HttpClientModule,
-    RadioButtonModule,
-    TableModule,
-    DialogModule,
-    ButtonModule,
-    ChartModule,
-    NgApexchartsModule,
-    BaseChartDirective,
-    ScrollingModule,
-    MatSnackBarModule,
-    MatCardModule,
-    MatProgressSpinnerModule,
-    MatButtonModule
-  ],
-  providers: [DataApiService, provideCharts(withDefaultRegisterables())],
-  changeDetection: ChangeDetectionStrategy.OnPush
-})
-export class HomepageComponent implements OnInit, OnDestroy {
-  private destroy$ = new Subject<void>();
-  private dataApi = inject(DataApiService);
-  private snackBar = inject(MatSnackBar);
-  private refreshInterval?: number;
-
-  // Loading states
-  isLoading = signal<boolean>(true);
-  error = signal<string | null>(null);
-
-  // Data states
-  globalMarket = signal<GlobalMarketData[]>([]);
-  screener = signal<ScreenerData[]>([]);
-  pdstocks = signal<StockData[]>([]);
-  ssstocks = signal<StockData[]>([]);
-  selectedValue = signal<string>('moversvolume');
-  selectedValueGainers = signal('gainers,intraday,desc,1d');
-  selectedValueLosers = signal('losers,intraday,asc,1d');
-  tableDataGainers = signal<ScreenerData[]>([]);
-  tableDataLosers = signal<ScreenerData[]>([]);
-
-  // Chart data
-  advdecChartData = signal<any>({
-    labels: ['9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00'],
-    datasets: [
-      {
-        label: 'Advances',
-        data: [0, 0, 0, 0, 0, 0, 0, 0],
-        backgroundColor: 'rgba(76, 175, 80, 0.5)',
-        borderColor: 'rgba(76, 175, 80, 1)',
-        borderWidth: 1
-      },
-      {
-        label: 'Declines',
-        data: [0, 0, 0, 0, 0, 0, 0, 0],
-        backgroundColor: 'rgba(244, 67, 54, 0.5)',
-        borderColor: 'rgba(244, 67, 54, 1)',
-        borderWidth: 1
-      }
-    ]
-  });
-
-  ngOnInit(): void {
-    // TODO: Implement data loading logic
-    this.isLoading.set(false);
-  }
-
-  ngOnDestroy(): void {
-    this.destroy$.next();
-    this.destroy$.complete();
-  }
-}
-  text5: string;
-  text6: string;
-  // text7:string;
-  // text8:string;
-  // text9:string;
-  // text10:string;
-  text11: string;
-}
 export interface screenerLoserstiles {
   text1: string;
   text2: string;
@@ -191,35 +105,6 @@ export interface sectortiles {
   y: any;
 }
 //TreeMap.Inject(TreeMapTooltip, TreeMapLegend);
-=======
-import { Component, OnInit, OnDestroy, ChangeDetectionStrategy, inject, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { DataApiService } from '../core/services/data-api.service';
-import { HttpClientModule } from "@angular/common/http";
-import { FormsModule } from '@angular/forms';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { TableModule } from 'primeng/table';
-import { DialogModule } from 'primeng/dialog';
-import { ButtonModule } from 'primeng/button';
-import { ChartModule } from 'primeng/chart';
-import { NgApexchartsModule } from 'ng-apexcharts';
-import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2-charts';
-import { Subject, takeUntil, catchError, EMPTY, combineLatest } from 'rxjs';
-import { ScrollingModule } from '@angular/cdk/scrolling';
-import { GlobalMarketData, ScreenerData, StockData } from '../core/models/market.interface';
-import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
-import { MatCardModule } from '@angular/material/card';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatButtonModule } from '@angular/material/button';
-import { ChartOptions } from '../core/models/chart.interface';
-
->>>>>>> Stashed changes
-@Component({
-  selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss']
-=======
 import { Component, OnInit, OnDestroy, ChangeDetectionStrategy, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -267,10 +152,6 @@ import { ChartOptions } from '../core/models/chart.interface';
   ],
   providers: [DataApiService, provideCharts(withDefaultRegisterables())],
   changeDetection: ChangeDetectionStrategy.OnPush
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 })
 export class HomepageComponent implements OnInit, OnDestroy {
   private destroy$ = new Subject<void>();

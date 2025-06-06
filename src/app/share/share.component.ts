@@ -1,22 +1,15 @@
-<<<<<<< Updated upstream
-import { Component, OnInit, ViewChild, ElementRef, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, ViewEncapsulation, ChangeDetectorRef, Injectable } from '@angular/core';
 // import { Browser } from '@syncfusion/ej2-base';
 import jsonp from 'jsonp-modernized';
-import { ChangeDetectorRef } from '@angular/core';
 import stockData from '../lists/stocklist'; // Import the data
 import axios from 'axios';
 import { DataapiService } from '../../dataapi.service'
 
 import { PrimeNGConfig } from 'primeng/api';
 import { DatePipe } from '@angular/common'
-import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RadioButton } from 'primeng/radiobutton';
 import { HttpClient } from '@angular/common/http';
-=======
-=======
->>>>>>> Stashed changes
-import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule, MatSnackBar } from '@angular/material/snack-bar';
@@ -25,8 +18,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { Router, RouterModule } from '@angular/router';
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
 
 import Chart from 'chart.js/auto';
 import { ChartOptions, ChartConfiguration, ChartType } from 'chart.js';
@@ -246,19 +237,12 @@ export interface tlpitechinstile { text1: string; text2: string; }
 const stockMap = new Map(
   stockData.Data.map(stock => [stock.isin, stock])
 );
-=======
->>>>>>> Stashed changes
 
 @Component({
   selector: 'app-share',
   templateUrl: './share.component.html',
   styleUrls: ['./share.component.scss'],
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   encapsulation: ViewEncapsulation.None,
-=======
-=======
->>>>>>> Stashed changes
   standalone: true,
   imports: [
     CommonModule,
@@ -270,11 +254,8 @@ const stockMap = new Map(
     MatButtonModule,
     RouterModule
   ]
->>>>>>> Stashed changes
 })
 export class ShareComponent implements OnInit {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   @ViewChild('sparklineChart') sparklineChartRef: ElementRef;
   displayMaximizableneutral:boolean=false;
   displayMaximizablepositive:boolean=false;
@@ -3100,13 +3081,10 @@ getstocktoday1(mcsymbol) {
     }
     )
   }
-=======
   shareForm: FormGroup;
 
-=======
   shareForm: FormGroup;
 
->>>>>>> Stashed changes
   constructor(
     private formBuilder: FormBuilder,
     private snackBar: MatSnackBar,
@@ -3133,8 +3111,4 @@ getstocktoday1(mcsymbol) {
       this.router.navigate(['/dashboard']);
     }
   }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }

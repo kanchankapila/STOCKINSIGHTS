@@ -7,50 +7,11 @@ import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
 import { TabViewModule } from 'primeng/tabview';
 
+
 @Component({
   selector: 'app-analytics',
   templateUrl: './analytics.component.html',
   styleUrls: ['./analytics.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [
-    CommonModule,
-    MatCardModule,
-    MatButtonModule,
-    ButtonModule,
-    DialogModule,
-    TabViewModule
-  ]
-})
-export class AnalyticsComponent implements OnInit {
-  loading = true;
-  error = false;
-  displayMaximizable1 = false;
-  displayMaximizable2 = false;
-  displayMaximizable3 = false;
-  displayMaximizable4 = false;
-  displayMaximizable5 = false;
-  displayMaximizable6 = false;
-
-  constructor(private dataApiService: DataApiService) {}
-
-  ngOnInit(): void {
-    this.loadAnalyticsData();
-  }
-
-  loadAnalyticsData() {
-    // TODO: Implement analytics data loading logic
-    this.loading = false;
-  }
-}
-
->>>>>>> Stashed changes
-@Component({
-  selector: 'app-analytics',
-  templateUrl: './analytics.component.html',
-  styleUrls: ['./analytics.component.scss'],
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   encapsulation: ViewEncapsulation.None,
  
 })
@@ -296,7 +257,6 @@ export class AnalyticsComponent implements OnInit {
         document.exitFullscreen();
       }
     }
-=======
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [
@@ -360,7 +320,6 @@ export class AnalyticsComponent implements OnInit {
 
   showMaximizableDialog6() {
     this.displayMaximizable6 = true;
->>>>>>> Stashed changes
   }
  
   async getTtVolume() {
@@ -1281,7 +1240,6 @@ export class AnalyticsComponent implements OnInit {
     } catch (err) {
       console.error(err);
     }
-=======
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [
@@ -1345,6 +1303,5 @@ export class AnalyticsComponent implements OnInit {
 
   showMaximizableDialog6() {
     this.displayMaximizable6 = true;
->>>>>>> Stashed changes
   }
 }
