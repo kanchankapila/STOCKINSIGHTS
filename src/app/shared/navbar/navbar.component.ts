@@ -1,9 +1,4 @@
-<<<<<<< Updated upstream
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-=======
-=======
->>>>>>> Stashed changes
-import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, ChangeDetectionStrategy, Input, Output, EventEmitter, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -15,17 +10,12 @@ import { MatDividerModule } from '@angular/material/divider';
 import { AppStateService } from '../../core/state/app.state';
 import { AuthService } from '../../core/services/auth.service';
 import { map } from 'rxjs/operators';
-import { inject } from '@angular/core';
 
 // PrimeNG Imports
 import { DropdownModule } from 'primeng/dropdown';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { CardModule } from 'primeng/card';
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 export interface pcrnseniftytile {
   text1: number;
@@ -72,14 +62,10 @@ export interface newscardtile {
 
 @Component({
   selector: 'app-navbar',
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss',],
-  providers: []
-=======
-=======
->>>>>>> Stashed changes
+  styleUrls: ['./navbar.component.scss'],
+  providers: [],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [
     CommonModule,
@@ -94,34 +80,7 @@ export interface newscardtile {
     ButtonModule,
     SidebarModule,
     CardModule
-  ],
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss'],
-
-
-
-
-
-
-
-changeDetection: ChangeDetectionStrategy.OnPush
-standalone: true,
-imports: [
-  CommonModule,
-  RouterModule,
-  FormsModule,
-  MatToolbarModule,
-  MatButtonModule,
-  MatIconModule,
-  MatMenuModule,
-  MatDividerModule,
-  DropdownModule,
-  ButtonModule,
-  SidebarModule,
-  CardModule
-],
-templateUrl: './navbar.component.html',
-styleUrls: ['./navbar.component.scss'],
+  ]
 })
 export class NavbarComponent {
   @Input() isAuthenticated = false;
@@ -210,8 +169,6 @@ export class NavbarComponent {
   trackByFunctionnewscardnav(index: number): number {
     return index;
   }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   getbniftytlbuildup(tlidbnifty) {
     this.tlidbnifty = '1898'
     this.dataApi.getTlBuildup(this.tlidbnifty).subscribe(data5 => {
@@ -410,8 +367,4 @@ export class NavbarComponent {
 
   }
   
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }

@@ -54,18 +54,3 @@ import { environment } from '../environments/environment';
   bootstrap: []
 })
 export class AppModule { }
-      useClass: CacheInterceptor,
-      multi: true
-    },
-    DataApiService,
-    LoadingService,
-    CacheService
-  ],
-  bootstrap: []
-})
-<<<<<<< Updated upstream
-export class AppModule { } 
->>>>>>> Stashed changes
-=======
-export class AppModule { } 
->>>>>>> Stashed changes
