@@ -12,7 +12,7 @@ export class DataapiService {
     this.setBaseUrl(); // Initialize baseurl based on hostname
   }
 
-  ngOninit(): any {
+  ngOnInit(): any {
     console.log(window.location.hostname)
     this.baseurl = "http://localhost:9999";
     this.setBaseUrl();
